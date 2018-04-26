@@ -30,7 +30,7 @@ public class DataTableServlet extends HttpServlet{
 		{
 			PrintWriter out = res.getWriter();
 			ServletContext context=getServletContext(); 
-			
+		
 			//Database Insertion Logic Here
 			con = DBConnection.getInstance().getConnection(context.getInitParameter("db_url"),context.getInitParameter("db_username"),context.getInitParameter("db_password"));
 			stmt=con.createStatement();
