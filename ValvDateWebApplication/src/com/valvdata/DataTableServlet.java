@@ -26,11 +26,12 @@ public class DataTableServlet extends HttpServlet{
 	ResultSet rst=null;
 	protected void service(HttpServletRequest req, HttpServletResponse res)
 	{
-		try
+		try     
 		{
 			PrintWriter out = res.getWriter();
 			ServletContext context=getServletContext(); 
 			
+	System.out.print("========");
 			//Database Insertion Logic Here
 			con = DBConnection.getInstance().getConnection(context.getInitParameter("db_url"),context.getInitParameter("db_username"),context.getInitParameter("db_password"));
 			stmt=con.createStatement();
