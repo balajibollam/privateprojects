@@ -9,11 +9,12 @@ input#signIn {
     /* width: 134px; */
     overflow: visible;
     background: url(../images/generic/linkedin-icon.png) no-repeat 50% #CCC;
-    left: 1459px;
+    left: 1192px;
     z-index: 51;
     position: relative;
     font-size: 22px;
     FONT-FAMILY: CURSIVE;
+    top: -31px;
 } 
 
 
@@ -26,10 +27,10 @@ input#signIn {
 }
 
 .slideshow-container {
-  max-width: 1300px;
-  position: relative;
+max-width: 1300px;
+  position: relative; 
   margin: auto;
-  top: 90px;
+  top: 20px;
 }
 
 #titleMove
@@ -58,6 +59,7 @@ font-family: Abel;
   padding: 8px 12px;
   position: absolute;
   top: 0;
+  display: none;
 }
 
 /* The dots/bullets/indicators */

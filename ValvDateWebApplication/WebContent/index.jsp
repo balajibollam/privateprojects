@@ -15,7 +15,7 @@
 <script src="<%=request.getContextPath()%>/js/navigationTabs.js"></script>
 </head>
 <body class="bg1">
-	<img id="iconCom" src="images/iconCompany.png" />
+	<span id="valvicon"><img id="iconCom" src="images/iconCompany.png" /></span>  
 	<form action="login.jsp">
 		<input id="signIn" type="submit" value="SignIn" />
 	</form>

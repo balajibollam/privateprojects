@@ -60,13 +60,7 @@ $.ajax({
 }
 </script>
 <style>
-#home-button
-{
-	 right: -1270px;
-    position: relative;
-    background: wheat;
-    top: 30px;
-}
+
 </style>
 </head>
 

@@ -115,6 +115,7 @@ $(document).ready(function() {
 </script>
 </head>
 <body>
+<a id="home-button" href="<%=request.getContextPath()%>/index.jsp">Home</a> 
 <div class="bg-r">
 
 <br/>

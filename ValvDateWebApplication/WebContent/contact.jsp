@@ -36,7 +36,7 @@ background-color: #ecf1e5 ;
     color: #888888;
     display: block;
     font-size: 14px;
-    height: 38px; 
+    height: 18px;   
     line-height: 1.42857;
     padding: 8px 12px;
     transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;

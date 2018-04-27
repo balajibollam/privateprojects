@@ -1,5 +1,5 @@
 body {
-    overflow-x: hidden;
+    overflow: auto;
     background: lightcoral;
 }
  
@@ -21,8 +21,9 @@ body {
 background: transparent;
 }
 ul.tabs {
-  right: -270px;
+  /* right: -270px; */
     background: mintcream;
+    bottom: 10px; 
 }
 
 /* #iconCom {
@@ -31,12 +32,18 @@ ul.tabs {
     } */
     
     img#iconCom {
-	    left: 773px;
+	 left: 544px;
     position: relative;
-    top: 20px;
-    height: 67px;
-}
-
+    top: 20px; 
+    height: 60px;
+    
+} 
+#valvicon {
+    /* margin: 0 auto; */
+    text-align: center;
+    padding: 0px;  
+    
+} 
 #contentp
 {
     /* width: 50%;
@@ -48,11 +55,12 @@ ul.tabs {
   /*  display: table; */
      position: relative;
     left: 640px;
-    top: -300px;
+    /* top: -300px; */
+        bottom: 384px; 
 }
 
 #contentp {
-    width: 60%;
+    width: 55%;
     font-size: 21px;
     color: black;
     line-height: 22px;

@@ -5,7 +5,10 @@ ul.tabs {
     /* right: -470px; */
     position: relative;
 }
-
+.tabs .dropdown li {
+    cursor: pointer;
+   /*  border-bottom: 1px solid gray; */
+}      
 .tabs {
 list-style-type: none;
 margin-bottom: 0;

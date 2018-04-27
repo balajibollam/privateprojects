@@ -27,8 +27,8 @@ a#logout-button {
 }
 </style>
 <script>
-$(document).ready(function() {
-	var oTable = $('#tableId').dataTable( {
+$(document).ready(function() { 
+	var oTable = $('#user_tableId').dataTable( {
 	//"processing": true,
 	"ajax": {
 	"url":  "defaultdatable",
@@ -41,17 +41,18 @@ $(document).ready(function() {
 	
 	
 	$("body").delegate(".deletebutton", "click",function(){
-   
-		console.log(" inside the deletebutton ===  "); 
+		$(this).parent().parent().remove();  
+		console.log(" inside the deletebutton = ===  "); 
 	    $.ajax({   
 	      type:"POST",
 	      url:"deleteuser",   
 	      data:{"id":$(this).attr("id")},
 	       success: function (response)
 	{
-		if(response=="true")
+		if(response=="success")
 			{
-				alert("You Query Submitted SuccessFully");
+			 
+				alert("user  successfully deleted");
 			}
 		
 	},
@@ -72,8 +73,10 @@ $(document).ready(function() {
 </script>
 </head>
 <body>
+<a id="logout-button" href="logout">Logout</a> 
+<br/><br/><br/><br/> 
 <table cellpadding="0" cellspacing="0" border="2"
-id="tableId">
+id="user_tableId">
 <thead>
 <tr>
 <th width="10%">FullName</th>
